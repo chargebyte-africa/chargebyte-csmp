@@ -5,18 +5,37 @@
 
 ## Overview
 
-The **Chargebyte CSMP (Charging Station Management Platform)** is a comprehensive cloud-based IoT platform designed to manage Chargebyte powerbank rental stations across multiple locations in Africa. The platform provides end-to-end management of powerbank rentals, from station monitoring to payment processing and customer management.
+The **Chargebyte CSMP (Charging Station Management Platform)** is a cloud-based IoT platform that powers Chargebyte's network of smart power bank stations and community digital services across Africa.
+
+The platform provides centralized management of power bank rentals, secure digital payments, IoT telemetry, environmental monitoring, and community Wi-Fi services through a single intelligent platform. Designed for scalability, Chargebyte CSMP enables operators to remotely monitor station health, optimize operations, improve customer experience, and deliver digital infrastructure to underserved communities.
+
+Beyond power bank rentals, every Chargebyte station is designed to become a **Smart Community Hub**, providing reliable access to power, internet connectivity, and environmental insights.
 
 ### Key Capabilities
 
-- **Device & Station Management** - Register, monitor, and manage charging stations remotely
-- **Battery Inventory Management** - Track battery health, availability, and lifecycle
-- **Customer Rental Management** - Handle powerbank rentals, returns, and refunds
-- **Payment Processing** - Integrated M-Pesa STK push payments and automated refunds
-- **IoT Telemetry Collection** - Real-time data from stations and batteries
-- **Remote Diagnostics** - Monitor station health and perform remote troubleshooting
-- **Alerts & Notifications** - Automated alerts for system events and anomalies
-- **Reporting & Analytics** - Generate insights on usage, revenue, and performance
+- **Smart Station Management** – Register, monitor, update, and manage IoT stations remotely.
+- **Battery Lifecycle Management** – Track battery availability, charging cycles, health, and utilization.
+- **Rental & Customer Management** – Manage rentals, returns, customers, and operational workflows.
+- **Digital Payments** – Secure mobile payment processing with automated transaction management.
+- **Community Wi-Fi Services** – Provide secure public hotspot access through QR-code onboarding and captive portal authentication.
+- **Climate & Environmental Monitoring** – Collect environmental data such as temperature, humidity, and air quality to improve operational planning and community awareness.
+- **IoT Telemetry Collection** – Receive real-time operational data from stations for monitoring and analytics.
+- **Remote Diagnostics** – Detect issues, monitor equipment health, and support preventive maintenance.
+- **Alerts & Notifications** – Intelligent alerts for operational events, connectivity issues, and system health.
+- **Analytics & Reporting** – Generate operational, financial, environmental, and utilization insights.
+
+---
+
+## Technology Impact to Communities
+
+Chargebyte stations are designed to provide more than portable power. Each station can serve as a community technology hub by delivering:
+
+- Access to portable power through smart power bank rentals.
+- Affordable public Wi-Fi connectivity.
+- Secure cashless digital payments.
+- Environmental monitoring for smarter infrastructure planning.
+- Real-time operational insights that improve service availability.
+- Digital inclusion by extending internet access into underserved communities.
 
 ---
 
@@ -81,11 +100,40 @@ The **Chargebyte CSMP (Charging Station Management Platform)** is a comprehensiv
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-## Core Data Models
+---
 
-### Rentals Table
-### Transactions Table
-### M-Pesa Callbacks Table
+## Community Wi-Fi Services
+
+Chargebyte stations can provide managed public internet access using an embedded industrial networking solution with hotspot functionality.
+
+Users simply connects tou our Chargebyte WiFi, select an internet package, complete secure payment, and receive immediate internet access through a captive portal.
+
+### Wi-Fi Features
+
+- Secure captive portal authentication
+- Time-based internet packages
+- Session management
+- Usage analytics
+- Network health monitoring
+- Remote hotspot administration
+- Community connectivity reporting
+
+---
+
+## Climate Intelligence
+
+Each station can collect environmental information that supports operational efficiency and community awareness.
+
+Typical environmental metrics include:
+
+- Ambient temperature
+- Relative humidity
+- Air quality (where available)
+- Internal equipment temperature
+- Environmental trends
+- Weather-related operational indicators
+
+These insights help operators optimize station performance while providing valuable environmental information for communities and deployment planning.
 
 ---
 
@@ -203,6 +251,157 @@ sequenceDiagram
 
 ---
 
+## Community Wi-Fi Journey
+
+In addition to power bank rentals, every Chargebyte station can function as a **Community Internet Access Point**.
+
+Customers scan the station QR code, choose an internet package, complete secure payment, and receive immediate access through a secure captive portal.
+
+```mermaid
+flowchart LR
+
+A[Connects to Chargebyte WiFi]
+--> B[Chargebyte Portal]
+
+B --> C[Choose Internet Package]
+
+C --> D[Secure Payment]
+
+D --> E[Wi-Fi Access Granted]
+
+E --> F[Internet Session]
+
+F --> G[Session Analytics]
+```
+
+### Community Wi-Fi Features
+
+- Secure captive portal authentication
+- Flexible internet packages
+- Session monitoring
+- Network health monitoring
+- Remote hotspot administration
+- Usage analytics
+- Community connectivity reporting
+
+---
+
+# Climate Intelligence
+
+Chargebyte stations can be equipped with environmental sensors that continuously monitor local conditions.
+
+Environmental information helps improve equipment reliability while supporting data-driven planning for communities and infrastructure operators.
+
+### Environmental Metrics
+
+| Metric | Purpose |
+|---------|----------|
+| Ambient Temperature | Equipment protection |
+| Relative Humidity | Environmental monitoring |
+| Air Quality | Community environmental insights |
+| Internal Cabinet Temperature | Device health monitoring |
+| Climate Trends | Historical environmental analysis |
+
+---
+
+# Monitoring & Analytics Dashboard
+
+The Chargebyte CSMP Dashboard provides centralized operational visibility across every deployed station.
+
+### Dashboard Modules
+
+- Live Station Monitoring
+- Battery Inventory
+- Rental Analytics
+- Revenue Dashboard
+- Community Wi-Fi Analytics
+- Climate Dashboard
+- Device Health Monitoring
+- Customer Management
+- Alerts & Notifications
+
+### Key Performance Indicators
+
+- Active Stations
+- Available Batteries
+- Daily Rentals
+- Revenue
+- Wi-Fi Sessions
+- Internet Usage
+- Device Uptime
+- Battery Health Score
+- Environmental Conditions
+- Network Availability
+
+---
+
+## Smart Station Hardware
+
+Each Chargebyte station combines multiple technologies into a single smart infrastructure platform.
+
+### Embedded Components
+
+- IoT Controller
+- Smart Battery Management System
+- QR Code Interface
+- Industrial Networking Equipment
+- Embedded Internet Router
+- Hotspot Gateway
+- Environmental Sensors
+- Remote Diagnostics Module
+
+---
+
+# Security
+
+Chargebyte CSMP is designed with security and privacy as core principles.
+
+The public repository intentionally excludes production infrastructure, proprietary communication protocols, deployment configurations, API endpoints, credentials, and sensitive implementation details.
+
+Security practices include:
+
+- Encrypted communications
+- Secure authentication
+- Device identity verification
+- Role-based access control
+- Audit logging
+- Continuous system monitoring
+
+---
+
+# Community Impact
+
+Chargebyte is more than a power bank rental platform.
+
+Each station is designed to become a **Smart Community Hub** that supports digital inclusion by providing:
+
+- Portable energy access
+- Affordable internet connectivity
+- Cashless digital payments
+- Environmental awareness through climate monitoring
+- Operational intelligence for smarter infrastructure
+- Better access to digital services
+
+This approach enables a single deployment to improve access to power, connectivity, and technology while generating valuable operational and environmental insights.
+
+---
+
+# Future Roadmap
+
+Upcoming platform enhancements include:
+
+- AI-powered predictive maintenance
+- Battery demand forecasting
+- Smart energy optimization
+- Renewable energy integration
+- Expanded environmental sensing
+- Community Wi-Fi analytics
+- Smart city integrations
+- Carbon impact reporting
+- Multi-country deployments
+
+---
+
 ## Technology Stack
 
 ### Backend
@@ -225,7 +424,7 @@ sequenceDiagram
 - **Hosting**: Ubuntu Server
 - **Process Management**: PM2
 - **Reverse Proxy**: Nginx
-- **SSL**: Let's Encrypt
+- **SSL**: Sectigo
 - **Monitoring**: PM2 logs, custom logging
 
 ---
