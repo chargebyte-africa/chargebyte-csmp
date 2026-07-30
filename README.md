@@ -1,7 +1,3 @@
-Here's a complete, detailed README for your GitHub repository:
-
----
-
 # Chargebyte CSMP Platform
 
 ## Overview
